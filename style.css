@@ -1,0 +1,73 @@
+html {
+    background-color: black;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'CARTOON FREE', sans-serif;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+#player-turn {
+    color: #b1b1b1;
+    font-size: 36px;
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 2px; /* optional gap between cells */
+}
+
+.board-grid {
+    font-size: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc; /* optional styling */
+    border: 1px solid #666;
+}
+
+.board-grid:hover {
+    background-color: #b1b1b1; /* optional styling */
+    border: 1px solid #666;
+}
+
+#restart-btn {
+    font-family: 'CARTOON FREE', sans-serif;
+    font-size: 24px;
+    margin-top: 24px;
+    position: relative;
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	align-items: center;
+	justify-content: center;
+}
+
+#restart-btn:before {
+    position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 150px;
+	height: 150px;
+	content: " ";
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	border-radius: 150px;
+	filter: blur(7px);
+}
